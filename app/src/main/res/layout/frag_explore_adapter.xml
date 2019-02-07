@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_8"
+        cardview:cardElevation="3dp"
+        cardview:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/imageCard"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/ivImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvTopDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_24"
+                android:gravity="center"
+                android:textSize="@dimen/sp_13"
+                tools:text="@string/af_essentials" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_6"
+                android:gravity="center"
+                android:textSize="@dimen/sp_17"
+                android:textStyle="bold"
+                tools:text="@string/top_starting" />
+
+            <TextView
+                android:id="@+id/tvPromoMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_6"
+                android:gravity="center"
+                android:textSize="@dimen/sp_11"
+                tools:text="@string/use_code" />
+
+            <TextView
+                android:id="@+id/tvBottomDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:gravity="center"
+                android:textSize="@dimen/sp_13"
+                android:autoLink="web"
+                tools:text="@string/description" />
+
+
+            <LinearLayout
+                android:id="@+id/btn_parent_linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <!--<TextView-->
+                <!--android:id="@+id/btn_shop"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/dp_8"-->
+                <!--android:background="@drawable/button_shape"-->
+                <!--android:gravity="center"-->
+                <!--android:padding="@dimen/dp_16"-->
+                <!--android:text="@string/shop"-->
+                <!--android:clickable="true"-->
+                <!--android:textSize="@dimen/sp_15" />-->
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

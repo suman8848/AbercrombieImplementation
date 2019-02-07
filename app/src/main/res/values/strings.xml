@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AbercrobieTestCode</string>
+    <string name="new_arrivals_under_construction">New Arrivals Under Construction</string>
+    <string name="categories_under_construction">Categories Under Construction</string>
+    <string name="af_essentials"><![CDATA[A&F ESSENTIALS]]></string>
+    <string name="top_starting">TOP STARTING AT $12</string>
+    <string name="use_code">USE CODE : 1234</string>
+    <string name="description"><![CDATA[In Store & Online Exclusion apply. See Details]]></string>
+    <string name="shop">Shop</string>
+</resources>
